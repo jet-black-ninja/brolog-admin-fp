@@ -1,0 +1,104 @@
+.Default {
+    $background_1:#001c30;
+    $text_1: #f6f6f6;
+    $text_2: #001b2e;
+    $text_3: #707070;
+    $nav: #001c30;
+    $sidebar: #001c30;
+    $card_background: #cd3c00;
+    $tag_background: #cd3c00;
+    $hover: #c6e0ff;
+    $button: #003b5e;
+    $button_hover: #005180;
+    $button_danger: #800040;
+    $button_danger_hover: #99024e;
+    $highlight: #d2008f;
+    $searchbar: rgba(246, 246, 246, 0.1);
+    $searchbar_focus: rgba(255, 255, 255, 0.2);
+    $link: #008fba;
+    $link_hover: #006195
+}
+
+.Matte {
+    $background_1: #44475a;
+    $text_1: #bdc3c7;
+    $text_2: #bdc3c7;
+    $text_3: #d3c680;
+    $nav: #44475a;
+    $sidebar: #44475a;
+    $card_background: #4d5066;
+    $tag_background: #846560;
+    $hover: #777798;
+    $button: #555673;
+    $button_hover: #616285;
+    $button_danger: #68829f;
+    $button_danger_hover: #bb928b;
+    $highlight: #866c83;
+    $searchbar: rgba(189, 195, 199, 0.1);
+    $searchbar_focus: rgba(189, 195, 199, 0.2);
+    $link: #72c2c3;
+    $link_hover: #519d9e;
+  }
+  
+  .Dark {
+    $background_1: #1d1f21;
+    $text_1: #caced8;
+    $text_2: #caced8;
+    $text_3: #6a8799;
+    $nav: #1d1f21;
+    $sidebar: #1d1f21;
+    $card_background: hsl(210, 6%, 15%);
+    $tag_background: #48513b;
+    $hover: #50272c;
+    $button: #292d3e;
+    $button_hover: #353b56;
+    $button_danger: #97522c;
+    $button_danger_hover: #be100e;
+    $highlight: #ac6d74;
+    $searchbar: rgba(202, 206, 216, 0.1);
+    $searchbar_focus: rgba(202, 206, 216, 0.2);
+    $link: #72c373;
+    $link_hover: #2bde2e;
+  }
+  
+  .Bright {
+    $background_1: #f4f4f4;
+    $text_1: #3e3e3e;
+    $text_2: #3e3e3e;
+    $text_3: #6a8799;
+    $nav: #f4f4f4;
+    $sidebar: #f4f4f4;
+    $card_background: #ffffff;
+    $tag_background: #f7d4cf;
+    $hover: #f1d007;
+    $button: #f8eec7;
+    $button_hover: #decf92;
+    $button_danger: #fb7661;
+    $button_danger_hover: rgb(255, 91, 88);
+    $highlight: #f1d007;
+    $searchbar: rgba(62, 62, 62, 0.1);
+    $searchbar_focus: rgba(62, 62, 62, 0.2);
+    $link: #db2d20;
+    $link_hover: #7a0d06;
+  }
+  
+  .Chameleon {
+    $background_1: #2c2c2c;
+    $text_1: #c8bb97;
+    $text_2: #d79821;
+    $text_3: #777777;
+    $nav: #2c2c2c;
+    $sidebar: #2c2c2c;
+    $card_background: #383838;
+    $tag_background: #cc231c;
+    $hover: #4e5165;
+    $button: #5a5959;
+    $button_hover: #777777;
+    $button_danger: #cc231c;
+    $button_danger_hover: #a0100b;
+    $highlight: #689d69;
+    $searchbar: rgba(106, 106, 106, 0.3);
+    $searchbar_focus: rgba(106, 106, 106, 0.6);
+    $link: #458587;
+    $link_hover: #4aaeb1;
+  }
