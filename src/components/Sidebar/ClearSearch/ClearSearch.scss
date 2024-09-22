@@ -1,0 +1,24 @@
+.clear-search-button {
+    all: unset;
+    width: 100%;
+    margin-bottom: 2rem;
+    font-size: 0.6rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover{
+        background: none;
+        &.remove-filter-icon {
+            transform: rotate(-360deg);
+        }
+    }
+    &:focus{
+        outline: none;
+    }
+    span{
+        margin-right: 0.5em;
+    }
+}
+.remove-filter-icon {
+    transition: all 0.2s linear;
+}

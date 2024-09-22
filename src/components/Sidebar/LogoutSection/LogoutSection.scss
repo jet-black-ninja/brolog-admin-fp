@@ -1,0 +1,32 @@
+@import "../../../variables.scss";
+
+.logout-container {
+    width: 100%;
+}
+
+.logoutBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 0.75em;
+    background-color: $button;
+    color: $text_1;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    border-radius: 4px;
+    border: 1px slid transparent;
+    line-height: normal;
+    gap: 1rem;
+    width: 100%;
+    &:hover{
+        background-color: $button_hover;
+        border-color: $button_hover;
+        color: $text_1;
+    }
+    &:focus,
+    &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+}

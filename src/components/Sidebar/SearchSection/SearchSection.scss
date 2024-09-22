@@ -1,0 +1,54 @@
+@import "../../../variables.scss";
+
+.searchbox-heading{
+    margin-top: 0;
+    font-size:1.2em;
+}
+.searchbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    input{
+        background: none;
+        height: 2.5em;
+        font-size: 0.7em;
+        border-radius: 0;
+        border-color: $searchbar;
+        color: $text_1;
+        transition: background-color 0.2s ease-in-out;
+        flex: 1;
+        border: none;
+        font-size: 16px;
+        transition: transform 0.2s ease-in-out;
+        &:focus{
+            border: none;
+            border-radius: 0;
+            background-color: var(--searchbar_focus);
+        }
+    }
+}
+
+.search-icon {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    right: -0.5em;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+    &:hover{
+        background: none;
+        outline: none;
+        border: none;
+    }
+}
+    
+.searchbox input:focus + .search-icon {
+        transform: rotate(180deg);
+        background: none;
+        outline: none;
+        border: none;
+}
