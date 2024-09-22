@@ -1,0 +1,99 @@
+.login-overlay {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+
+.login-heading {
+    color: #001b2e;
+}
+
+.login-container {
+    box-sizing: border-box;
+    height: 50%;
+    width: 30%;
+    border-radius: 4px;
+    padding: 1em;
+    h1{
+        color: #001b2e;
+        font-size:1.5em;
+    }
+}
+
+.verifying-container,
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+input[name='username'],
+input[name='password'] {
+    border: solid 1px black;
+    &:hover {
+        outline: solid 1px #d2008f;
+    }
+    &:focus {
+        outline: solid 2px #d2008f;
+    }
+}
+
+input[name='username'] + label,
+input[name='password'] + label {
+    top: 0.4rem;
+}
+
+input[name='username']:focus + label,
+input[name='password']:focus + label,
+input[name='username']:not(:focus):valid ~ label,
+input[name='password']:not(:focus):valid ~ label {
+  top: -1.4em;
+}
+
+.loginBtn {
+    position: relative;
+    overflow:hidden;
+    border: none;
+    outline: none;
+    background-color: rgba(255 , 221, 0 ,0.2);
+    &::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 130%;
+        height: 100%;
+        background-color: rgba(255, 221, 0, 0.5);
+        transform: translate(-110%, 0) skew(-33deg);
+        transition: 0.5s;
+    }
+    &:hover{
+        &::before{
+            transform: translate(-5%,0) skew(-15deg);
+        }
+    }
+}
+
+.loginBtn-text {
+    position: relative;
+    transition: 0.5s;
+}
+.loginBtn:hover .text{
+    color: #FFF;
+}
+
+@media screen and (max-width: 800px) {
+    .login-container {
+      width: 95%;
+    }
+  }
+
+
+
+

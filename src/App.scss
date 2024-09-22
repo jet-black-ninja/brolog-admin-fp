@@ -1,5 +1,22 @@
 @import "./variables.scss";
-
+    $background_1:#001c30;
+    $text_1: #f6f6f6;
+    $text_2: #001b2e;
+    $text_3: #707070;
+    $nav: #001c30;
+    $sidebar: #001c30;
+    $card_background: #cd3c00;
+    $tag_background: #cd3c00;
+    $hover: #c6e0ff;
+    $button: #003b5e;
+    $button_hover: #005180;
+    $button_danger: #800040;
+    $button_danger_hover: #99024e;
+    $highlight: #d2008f;
+    $searchbar: rgba(246, 246, 246, 0.1);
+    $searchbar_focus: rgba(255, 255, 255, 0.2);
+    $link: #008fba;
+    $link_hover: #006195;
 body{
     margin: 0;
     min-width: 320px;
