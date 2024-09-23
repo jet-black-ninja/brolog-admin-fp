@@ -1,0 +1,73 @@
+.article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0.5em;
+    background-color: $card_background;
+    color: $text_2;
+    text-decoration: none;
+    transition: background-color 0.3s cubic-bezier(0.85, 0 , 0.07, 1);
+    &:hover{
+        background-color: $hover;
+        color: $text_2;
+        .read_more{
+            transform: scale(1.1);
+            color: $text_2;
+        }
+    }
+    @media screen and (max-width: 800px){
+        padding: 0.25em;
+    }
+}
+
+.timestamp{
+    font-size: 0.6em;
+    color: $text_3;
+}
+
+.article-title{
+    margin: 0;
+    word-wrap: break-word;
+    font-size: 1em; 
+}
+
+.author{
+    font-size: 0.6em;
+    color: $text_3
+}
+
+.article-text{
+    max-width: 100%;
+    word-wrap: break-word;
+    font-size: 0.75em;
+    color: $text_3;
+}
+
+.article-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.75em;
+    gap: 0.6em;
+    font-size: 0.6em;
+    width: 100%;
+}
+
+.comments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.read_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6em;
+    margin-left: auto;
+    color: $text_3;
+    transition: all 0.3s ease-in-out;
+}

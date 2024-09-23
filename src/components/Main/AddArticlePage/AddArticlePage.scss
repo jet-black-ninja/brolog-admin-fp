@@ -1,0 +1,65 @@
+.add-article_page {
+    max-width: 70ch;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.add-article_container {
+    padding: 1em;
+    background-color: $card_background;
+    color: $text_2;
+    border-radius: 4px;
+}
+
+.add-article_header {
+    font-size: 1.5em;
+}
+
+.create-article-tag-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem; 
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.tags-container{
+    margin-bottom: 1.5rem;
+    label{
+        all: unset;
+    }
+}
+
+.title_heading {
+    margin-top: 0;
+}
+
+.create-article-tag-list label,
+.create-article-publish-options label{
+    all: unset;
+}
+
+.checkbox-container input[type="checkbox"] {
+    display: none;
+    label{
+        color:$text_2;
+        display: inline-block;
+        padding: 4px 10px;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid $text_3;
+        border-radius: 4px;
+        &:checked{
+            background-color: $highlight;
+            color: $text_1;
+        }
+    }
+}
+
+.submitArticleBtn{
+    color: $text_1;
+}
+

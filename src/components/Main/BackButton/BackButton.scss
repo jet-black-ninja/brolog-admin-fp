@@ -1,0 +1,17 @@
+.backBtn{
+    all: unset;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8em;
+    color: $text_2;
+    cursor: pointer;
+    margin-top: 1em;
+    &:hover{
+        background: none;
+        color: $highlight;
+    }
+    &:focus{
+        outline: none;
+    }
+}

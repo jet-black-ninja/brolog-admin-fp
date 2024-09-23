@@ -1,0 +1,17 @@
+.not_found {
+    text-align: left;
+    padding: 2em;
+    margin-top: 1rem;
+    background-color: $card_background;
+    color: $text_2;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.not_found .backBtn {
+    align-self: flex-start;
+    color: $text_2;
+    &:hover{
+        color: $highlight;
+    }
+}

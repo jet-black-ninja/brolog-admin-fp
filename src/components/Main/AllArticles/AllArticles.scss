@@ -1,0 +1,19 @@
+.all-articles-list{
+    display: flex;
+    flex-direction:column;
+    padding: 1rem;
+    &>.article-containerL:first-child{
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+    &>.article-container:last-child {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
+.article-container{
+    box-shadow: 0 2px 4px rgba( 0 , 0 , 0 ,0.1);
+    overflow: hidden;
+    color: $text_2;
+}
