@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.sidebar{
+    box-sizing: border-box;
+    position: relative;
+    height: 100%;
+    max-height: 100vh;
+    background-color:  $sidebar;
+    padding: 3em 3em 3em 0;
+    margin: auto;
+    @media screen and (max-width: 800px){
+        padding: 1rem;
+        min-height: 100vh;
+        overflow-y: auto;
+    }
+}
+

@@ -1,0 +1,39 @@
+@import "../../../variables.scss";
+.side-tags-heading {
+    font-size: 1.2em;
+}
+
+.side-tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: calc(100vh/4);
+    gap: 1rem;
+    padding: 1rem 2px;
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: $background_1;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $highlight;
+    }
+}
+
+.side-tag-list-item {
+    border-radius: 2px;
+    font-size: 0.6em;
+    background-color: $tag_background;
+    color: $text_1;
+    padding: 0 1rem;
+    cursor: pointer;
+    &:hover{
+        outline: solid 2px $highlight;
+    }
+    &.active{
+        background-color: $highlight;
+    }
+}
+

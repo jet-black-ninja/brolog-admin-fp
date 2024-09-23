@@ -4,7 +4,7 @@ import "./AddArticleSection.scss"
 
 export default function AddArticleSection(){
     return (
-        <div className = "add_article-containeer">
+        <div className = "add_article-container">
             <Link to ="/add_article" className="addArticleBtn" aria-label='Add article'>
             Add Article<FaPen/>
             </Link>
