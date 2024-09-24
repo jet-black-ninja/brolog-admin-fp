@@ -23,7 +23,7 @@ export default function AddArticlePage({setCurrentView}:Props) {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<Error | null>(null);
     const [showInfoText, setShowInfoText] = useState<boolean>(false);
-    const [infoTextMessage, setInfoTextMessage] = useState<string | null>(null);
+    const [infoTextMessage, setInfoTextMessage] = useState<string >("");
     const [selectedTags, setSelectedTags] = useState<string[]>([]);
     const [isPublished, setIsPublished] = useState<boolean>(false);
 
