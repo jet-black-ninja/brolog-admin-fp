@@ -80,7 +80,7 @@ export default function ContentEditor({ setEditorRef, decodedContent }: ITinyMCE
         pre_process: (editor: TinyMCEEditor, el: HTMLElement) => {
           Prism.highlightAllUnder(el);
         },
-        file_picker_callback: (cb, value, meta) => {
+        file_picker_callback: (cb/*, value, meta*/) => {
           const createFileInput = () => {
             const input = document.createElement('input');
             input.setAttribute('type', 'file');
