@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import { useState } from "react";
 import { IComment } from "../../../interfaces/Comment";
 import Comment from "./Comment/Comment.tsx"
 import NewCommentModal from "./NewCommentModal/NewCommentModal.tsx"
