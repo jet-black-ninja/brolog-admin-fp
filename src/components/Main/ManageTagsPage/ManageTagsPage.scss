@@ -1,0 +1,89 @@
+.manage_tags_page {
+    max-width: 70ch;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.manage_tags_container{
+    margin-top: 1rem;
+    padding: 1em;
+    background-color: $card_background;
+    color: $text_2;
+    border-radius: 4px;
+}
+
+.manage_tags_heading {
+    font-size: 1.5em;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newTag_input {
+    margin-bottom: 1.5em;
+}
+
+.create-article-tag-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.registered_tasks-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px $text_3;
+    border-radius: 4px;
+    height: 1.5em;
+    span {
+        padding-left : 1rem;
+    }
+    .options-container {
+        display: flex;
+        gap: 0.5rem;
+        padding-right: 1rem;
+    }
+}
+
+.tag_options-divider{
+    height: 100%;
+    width: 1px;
+    background-color: $text_3;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.tag_edit-button,
+.tag_delete-button {
+    all: unset;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover{
+        color: $highlight;
+    }
+}
+
+.tag_edit-button{
+    color:$button_danger
+}
+.tag_delete-button {
+    color: $button_danger_hover;
+}
+
+.submitTagBtn {
+    color: $text_1;
+    width: 100%;
+    align-self: center;
+}
+

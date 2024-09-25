@@ -8,7 +8,7 @@ import "./ConfirmArticleDelete.scss";
 export default function ConfirmArticleDelete() {
     const {token} = useContext(AuthContext);
     const [showInfoText, setShowInfoText] = useState<boolean>(false);
-    const [infoTextMessage, setInfoTextMessage] = useState<string| "">("");
+    const [infoTextMessage, setInfoTextMessage] = useState<string| null>(null);
 
     const params = useParams();
     const id: string | undefined = params.id;

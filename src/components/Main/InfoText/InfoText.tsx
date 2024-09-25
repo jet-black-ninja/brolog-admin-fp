@@ -1,7 +1,7 @@
 import "./InfoText.scss"
 
 interface Props{
-    message:string;
+    message:string | null;
 }
 
 export default function InfoText({message}:Props){
