@@ -1,4 +1,4 @@
-@import "../../../variables.scss";
+
 .side-tags-heading {
     font-size: 1.2em;
 }
@@ -15,25 +15,25 @@
         width: 8px;
     }
     &::-webkit-scrollbar-track {
-        background-color: $background_1;
+        background-color: var(--background_1);
     }
     &::-webkit-scrollbar-thumb {
-        background-color: $highlight;
+        background-color: var(--highlight);
     }
 }
 
 .side-tag-list-item {
     border-radius: 2px;
     font-size: 0.6em;
-    background-color: $tag_background;
-    color: $text_1;
+    background-color: var(--tag_background);
+    color: var(--text_1);
     padding: 0 1rem;
     cursor: pointer;
     &:hover{
-        outline: solid 2px $highlight;
+        outline: solid 2px var(--highlight);
     }
     &.active{
-        background-color: $highlight;
+        background-color: var(--highlight);
     }
 }
 

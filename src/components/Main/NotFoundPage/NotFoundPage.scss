@@ -2,16 +2,16 @@
     text-align: left;
     padding: 2em;
     margin-top: 1rem;
-    background-color: $card_background;
-    color: $text_2;
+    background-color: var(--card_background);
+    color: var(--text_2);
     border-radius: 4px;
     font-size: 0.8em;
 }
 
 .not_found .backBtn {
     align-self: flex-start;
-    color: $text_2;
+    color: var(--text_2);
     &:hover{
-        color: $highlight;
+        color: var(--highlight);
     }
 }

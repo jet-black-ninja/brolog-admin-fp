@@ -25,7 +25,7 @@
 .update_tag_modal-content {
     box-sizing: border-box;
     position: relative;
-    background-color: $card_background;
+    background-color: var(--card_background);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
     padding: 1.5em;
@@ -40,18 +40,18 @@
         border: none;
         &:focus{
             border:none;
-            border-bottom: solid 2px $highlight;
+            border-bottom: solid 2px var(--highlight);
         }
     }
     .closeBtn{
         position: absolute;
         top: 0;
         right: 0;
-        background-color: $button_danger;
+        background-color: var(--button_danger);
         font-size: 1rem;
         z-index: 100;
         &:hover{
-            background-color: $button_danger_hover;
+            background-color: var(--button_danger_hover);
         }
     }
     .input-container{

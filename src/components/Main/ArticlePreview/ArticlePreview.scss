@@ -5,16 +5,16 @@
     box-sizing: border-box;
     height: 100%;
     padding: 0.5em;
-    background-color: $card_background;
-    color: $text_2;
+    background-color: var(--card_background);
+    color: var(--text_2);
     text-decoration: none;
     transition: background-color 0.3s cubic-bezier(0.85, 0 , 0.07, 1);
     &:hover{
-        background-color: $hover;
-        color: $text_2;
+        background-color: var(--hover);
+        color: var(--text_2);
         .read_more{
             transform: scale(1.1);
-            color: $text_2;
+            color: var(--text_2);
         }
     }
     @media screen and (max-width: 800px){
@@ -24,7 +24,7 @@
 
 .timestamp{
     font-size: 0.6em;
-    color: $text_3;
+    color: var(--text_3);
 }
 
 .article-title{
@@ -35,14 +35,14 @@
 
 .author{
     font-size: 0.6em;
-    color: $text_3
+    color: var(--text_3);
 }
 
 .article-text{
     max-width: 100%;
     word-wrap: break-word;
     font-size: 0.75em;
-    color: $text_3;
+    color: var(--text_3);
 }
 
 .article-bottom {
@@ -68,6 +68,6 @@
     align-items: center;
     gap: 0.6em;
     margin-left: auto;
-    color: $text_3;
+    color: var(--text_3);
     transition: all 0.3s ease-in-out;
 }

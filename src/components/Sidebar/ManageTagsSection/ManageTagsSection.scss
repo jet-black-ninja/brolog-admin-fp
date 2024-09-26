@@ -1,5 +1,3 @@
-@import "../../../variables.scss";
-
 .manage_tags_side-container {
     width: 100%;
   }
@@ -11,8 +9,8 @@
     margin-bottom: 1rem;
     padding: 0.5em;
     font-size: 0.75em;
-    background-color: $button;
-    color: $text_1;
+    background-color: var(--button);
+    color: var(--text_1);
     cursor: pointer;
     transition: border-color 0.25s;
     border-radius: 4px;
@@ -20,9 +18,9 @@
     line-height: normal;
     gap: 1rem;
     &:hover{
-        background-color: $button_hover;
-        border-color: $button_hover;
-        color: $text_1;
+        background-color: var(--button_hover);
+        border-color: var(--button_hover);
+        color: var(--text_1);
     }
     &:focus,
     &:focus-visible{

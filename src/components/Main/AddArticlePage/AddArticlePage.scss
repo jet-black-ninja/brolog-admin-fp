@@ -8,8 +8,8 @@
 
 .add-article_container {
     padding: 1em;
-    background-color: $card_background;
-    color: $text_2;
+    background-color: var(--card_background);
+    color: var(--text_2);
     border-radius: 4px;
 }
 
@@ -45,21 +45,21 @@
 .checkbox-container input[type="checkbox"] {
     display: none;
     label{
-        color:$text_2;
+        color:var(--text_2);
         display: inline-block;
         padding: 4px 10px;
         margin: 0;
         cursor: pointer;
-        border: 1px solid $text_3;
+        border: 1px solid var(--text_3);
         border-radius: 4px;
         &:checked{
-            background-color: $highlight;
-            color: $text_1;
+            background-color: var(--highlight);
+            color: var(--text_1);
         }
     }
 }
 
 .submitArticleBtn{
-    color: $text_1;
+    color: var(--text_1);
 }
 
