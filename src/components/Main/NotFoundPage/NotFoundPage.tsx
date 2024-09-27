@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
 import { ViewType } from "../../../interfaces/customTypes";
 import BackButton from "../BackButton/BackButton";
-import "./NotF`oundPage.scss"
+import "./NotFoundPage.scss"
 
 interface Props{
     setCurrentView: Dispatch<SetStateAction<ViewType | null >>;

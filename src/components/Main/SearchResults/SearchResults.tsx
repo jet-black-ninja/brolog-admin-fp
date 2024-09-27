@@ -9,7 +9,7 @@ import ArticleFetchAnimation from '../ArticleFetchAnimation/ArticleFetchAnimatio
 import ArticleItem from '../ArticlePreview/ArticlePreview';
 import NoArticlePage from '../NoArticlePage/NoArticlePage';
 import NotFoundPage from '../NotFoundPage/NotFoundPage';
-import './SearchResults.css';
+import './SearchResults.scss';
 
 interface Props {
   setCurrentView: Dispatch<SetStateAction<ViewType | null>>;
