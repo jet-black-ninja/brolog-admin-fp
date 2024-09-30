@@ -17,7 +17,7 @@ export default function ThemeSwitch() {
     return (
         <div className ="theme-switch">
             <button className = "theme_switch-button" onClick={handleClick} aria-label = "Toggle Theme" >
-                Theme : {theme};
+                Theme : {theme}
             </button>
         </div>
     )

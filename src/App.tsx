@@ -45,6 +45,7 @@ function App() {
  },[refetchTrigger]);
 
  if(!user) {
+  console.log(user);
   return <LoginPage/>
  }
   if(!isAuth){

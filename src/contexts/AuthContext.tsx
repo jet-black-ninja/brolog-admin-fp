@@ -58,6 +58,9 @@ export const AuthContextProvider = ({children}:AuthContextProviderProps) => {
                         throw new Error(`Error: ${response.status} ${response.statusText}`); 
                     }
                 }
+                const data = await response.json();
+                setUser(data);
+                setIsAuth(true);
             }catch(error){
                 setUser(null);
                 setIsAuth(false);

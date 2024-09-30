@@ -1,11 +1,11 @@
 .Default{
-    --background_1:#001c30;
+    --background_1: #001c30;
     --text_1: #f6f6f6;
     --text_2: #001b2e;
     --text_3: #707070;
     --nav: #001c30;
     --sidebar: #001c30;
-    --card_background: #cd3c00;
+    --card_background: #f6f6f6;
     --tag_background: #cd3c00;
     --hover: #c6e0ff;
     --button: #003b5e;
@@ -14,8 +14,8 @@
     --button_danger_hover: #99024e;
     --highlight: #d2008f;
     --searchbar: rgba(246, 246, 246, 0.1);
-    --searchbar_focus: rgba(255, 255, 255, 0.2);
-    --link: #008fba;
+    --searchbar_focus: rgba(246, 246, 246, 0.2);
+    --link: #008fdb;
     --link_hover: #006195;
 }
 
@@ -128,9 +128,9 @@ button{
     font-family: inherit;
     background-color: #1a1a1a;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.25s ease;
     background-color: var(--button);
-    color: --text_1;
+    color: var(--text_1);
     &:hover{
         background-color: var(--button_hover);
         border-color: var(--button_hover);
@@ -143,8 +143,8 @@ button{
 
 a{
     font-weight: 500;
-    color: --link;
-    text-decoration: none;
+    color: var(--link);
+    text-decoration: inherit;
     &:hover{
         color: var(--link_hover);
     }
@@ -199,6 +199,18 @@ textarea:valid + label {
 
 .app-container{
     box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+  background-color: var(--background_1);
+  color: var(--text_1);
+}
+.main-container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     max-width: 70ch;
@@ -210,16 +222,17 @@ textarea:valid + label {
     font-size: 1.25em;
     background-color: var(--background_1);
 }
-
-.size-container{
+.side-container{
     box-sizing: border-box;
     position: sticky;
     top: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     margin: auto;
     line-height: 1.75;
     font-size: 1.25em;
+    max-height: 100vh;
     z-index: 10;
 }
 .sidebar_toggle{

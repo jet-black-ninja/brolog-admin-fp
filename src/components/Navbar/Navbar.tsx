@@ -12,7 +12,7 @@ export default function Navbar ({currentView}:Props) {
         <nav aria-label = "Main navigation" className = "navbar">
             <div className = "nav_upper-container">
                 <h1 className = "nav-title">
-                    <span> bro</span><span>-</span><span>log</span><span>/</span><span>admin</span>
+                    bro<span> - </span>log<span>/</span>admin
                 </h1>
                 <UserInfo/>
             </div>
