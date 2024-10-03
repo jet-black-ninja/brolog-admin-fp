@@ -1,5 +1,5 @@
 import { Editor as TinyMCEEditor } from 'tinymce';
-
+import axios from "axios"
 export const handleArticleUpdate = async (
   event: React.FormEvent<HTMLFormElement>,
   token: string | null,
@@ -22,17 +22,15 @@ export const handleArticleUpdate = async (
     };
 
     const serverURL = import.meta.env.VITE_SERVER_URL;
-    const response = await fetch(`${serverURL}/api/admin/articles/${id}`, {
-      method: 'PUT',
+    const response = await axios.put(`${serverURL}/api/admin/articles/${id}`, body, {
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`
-      },
-      body: JSON.stringify(body)
+      }
     });
 
-    if (response.ok) {
-    //   const data = await response.json();
+    if (response.status===200) {
+     const data = await response.data;
       successfulSubmit();
     } else {
       console.error(response.statusText);

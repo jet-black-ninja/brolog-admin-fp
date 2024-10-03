@@ -49,7 +49,7 @@ export default function AddArticlePage({setCurrentView}:Props) {
         return () => clearTimeout(timeoutId);
     }
     const failedSubmit = () => {
-        window.alert(`Error:${error}`)
+        window.alert(`Error:${error} here`)
     }
 
     useEffect (() => {
@@ -68,10 +68,10 @@ export default function AddArticlePage({setCurrentView}:Props) {
     return (
         <main className = "add-article_page" role='main'>
             <div className="add-article_container">
-                {showInfoText? (
+                {showInfoText ? (
                     <InfoText message = {infoTextMessage}/>
                 ):(
-                    <form onAbort={handleSubmit}>
+                    <form onSubmit={handleSubmit}>
                     <BackButton />
 
                     <header className = "add-article_header">

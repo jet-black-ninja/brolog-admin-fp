@@ -27,7 +27,6 @@ export default function Comment ({commentData, setRefetchTrigger}: Props){
                     }
                 });
                 const data = await res.json();
-                console.log(data);
                 setRefetchTrigger(true);
             }catch(error){
                 console.log(error);

@@ -31,7 +31,7 @@ export const Tags = ({tagList, selectedTags, setSelectedTags}:ITagsProps) => {
                         name={tag.name}
                         value={tag._id}
                         onChange={handleTagCheckboxChange}
-                        aria-label="tag.name"
+                        aria-label={tag.name}
                         aria-checked = {selectedTags.includes(tag._id)}
                     />
                     <label htmlFor={tag.name}>{tag.name}</label>

@@ -55,6 +55,7 @@ export default function ArticlePage ({setCurrentView}:Props)  {
     useEffect(() =>{
         setRefetchTrigger(false)
     },[refetchTrigger]);
+    
     useEffect(() => {
         Prims.highlightAll();
         getReadingTime();
@@ -99,7 +100,7 @@ export default function ArticlePage ({setCurrentView}:Props)  {
                 </article>
                 <BackButton/>
                 <div className="article_options_container">
-                    <Link to={`/edit/article/${id}`} className ="edit_article_button">
+                    <Link to={`/edit_article/${id}`} className ="edit_article_button">
                     Edit Article <FaPenAlt/>
                     </Link>
                     <Link to={`/confirm_article_delete/${id}`} className="delete_article-button">
